@@ -15,7 +15,7 @@ function App() {
   return (
     <div className={darkMode && "dark"}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main className="darkMode-color">
+      <main className="darkMode-color p-6 ">
           <Hero />
           <Services/>
           <Portfolio/>
