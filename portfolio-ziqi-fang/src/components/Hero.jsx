@@ -33,34 +33,38 @@ const Hero = () => {
     <section className='flex flex-col items-center text-center lg:flex-row lg:space-y-0 lg:space-x-10 lg:m-0 lg:p-16 justify-evenly lg:w-5/6 lg:pt-0'>
         <div>
 
+        <h3 className='text-[#3F2305] text-left text-xl md:text-2xl'>Hello! My name is </h3>
+        <h2 className='text-6xl md:text-7xl text-[#3F2305] uppercase font-bold text-left m-8 ml-0 mt-5 mb-5 tracking-wide'>Ziqi Fang</h2>
         
-        <h2 className='text-7xl text-[#3F2305] uppercase font-bold text-left m-8 ml-0'>Ziqi Fang</h2>
-        
-        {/* Multiple Typing Animation */}
-        <section className='flex wrapper gap-3 items-start h-[28px] overflow-hidden font-semibold'>
-            <span className='text-xl static-text text-[#F1C376]'>I am a </span>
-            <ul className='dynamic-text text-xl text-left text-sky-300 flex flex-col'>
-                {/* 1. Make a Border Div after word */}
+        {/* Multiple Typing Animation  h-[32px] */}
+        <section className='flex lg:block xl:flex xl:flex-row wrapper gap-3 items-start font-semibold lg:flex-col lg:gap-0 xl:gap-3 flex-col'>
+            <p className='text-xl md:text-2xl static-text text-[#F1C376] text-left'>And I'm a </p>
+            <div className='block overflow-hidden h-[28px] md:h-[32px] xl:flex'>
+                
+            
+            <ul className='dynamic-text text-xl md:text-2xl text-left text-[#e29734] flex flex-col font-semibold '>
+                {/* 1. Make a Border Div after word text-[#F1C376]*/}
                 <div>
-                <li className='relative after:content-[""] after:border-l-2 after:border-[#F1C376] after:absolute after:left-0 after:h-full after:w-full inline-block after:animate-typing-engineer after:bg-white top-0 animate-slide dark:after:bg-black text-[#F1C376]'>
+                <li className='relative after:content-[""] after:border-l-2 after:border-[#F1C376] after:absolute after:left-0 after:h-full after:w-full inline-block after:animate-typing-engineer after:bg-white top-0 animate-slide_xl md:animate-slide_2xl dark:after:bg-black '>
                 Software Engineer
                 </li>
                 </div>
 
                 <div>
-                <li className='relative after:content-[""] after:border-l-2 after:border-[#F1C376] after:absolute after:left-0 after:h-full after:w-full inline-block after:animate-typing-freelance after:bg-white top-0 animate-slide dark:after:bg-black text-[#F1C376]'>
+                <li className='relative after:content-[""] after:border-l-2 after:border-[#F1C376] after:absolute after:left-0 after:h-full after:w-full inline-block after:animate-typing-freelance after:bg-white top-0 animate-slide_xl md:animate-slide_2xl dark:after:bg-black '>
                 Freelance Web Developer
                 </li>
                 </div>
 
                 <div>
-                <li className='relative after:content-[""] after:border-l-2 after:border-[#F1C376] after:absolute after:left-0 after:h-full after:w-full inline-block after:animate-typing-modest after:bg-white top-0 animate-slide dark:after:bg-black text-[#F1C376]'>
+                <li className='relative after:content-[""] after:border-l-2 after:border-[#F1C376] after:absolute after:left-0 after:h-full after:w-full inline-block after:animate-typing-modest after:bg-white top-0 animate-slide_xl md:animate-slide_2xl dark:after:bg-black '>
                 Modest Learner
                 </li>
                 </div>
                 
                 
             </ul>
+            </div>
             
         </section>
 
@@ -69,7 +73,7 @@ const Hero = () => {
         
 
 
-        <div className='flex justify-evenly py-8 lg:py-16 text-3xl w-full '>
+        <div className='flex justify-evenly py-8 lg:py-16 text-3xl w-full md:justify-evenly md:gap-6 lg:justify-evenly '>
             {SOCIAL.map(({id, link, icon}) => (
                 <a 
                 href={link}
@@ -89,7 +93,7 @@ const Hero = () => {
         <div className='shrink-0'>
             <img src={chick}
             alt='Avatar alt'
-            className='w-60 h-60 md:w-72 md:h-72 object-cover object-top bg-gradient-to-b from-orange-400 rounded-xl pt-5'
+            className='w-60 h-60 md:w-72 md:h-72 lg:w-72 lg:h-72 object-cover object-top bg-gradient-to-b from-orange-400 rounded-xl pt-5'
             ></img>
             <a
             href={photo}

@@ -14,7 +14,10 @@ module.exports = {
         '0%,100%': {left: '0', margin: '0 0 0 0px'},
         '75%': {left: '100%', margin: '0 0 0 20px'},
       },
-      slide:{
+      slide_2xl:{
+        '100%':{top:'-96px'}
+      },
+      slide_xl:{
         '100%':{top:'-84px'}
       },
       bouncing : { 
@@ -34,7 +37,8 @@ module.exports = {
         'typing-engineer': 'typing 4s steps(19) infinite',
         'typing-freelance': 'typing 4s steps(27) infinite',
         'typing-modest': 'typing 4s steps(16) infinite',
-        'slide': 'slide 12s steps(3) infinite',
+        'slide_2xl': 'slide_2xl 12s steps(3) infinite',
+        'slide_xl': 'slide_xl 12s steps(3) infinite',
         'big-bounce':'bouncing 2s linear infinite',
         'rotating':'rotating 3s linear infinite',
       },
