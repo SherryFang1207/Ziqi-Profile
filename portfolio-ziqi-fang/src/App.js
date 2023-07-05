@@ -8,6 +8,7 @@ import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Avatar from "./components/Avatar.jsx";
 import About from './components/About.jsx'
+import Education from "./components/Education.jsx";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <main className="darkMode-color p-6 ">
           <Hero />
           <About/>
+          <Education/>
           <Services/>
           <Portfolio/>
           <Testimonials/>
