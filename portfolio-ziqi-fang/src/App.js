@@ -7,6 +7,7 @@ import Testimonials from "./components/Testimonials.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Avatar from "./components/Avatar.jsx";
+import About from './components/About.jsx'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <main className="darkMode-color p-6 ">
           <Hero />
-          <Avatar/>
+          <About/>
           <Services/>
           <Portfolio/>
           <Testimonials/>

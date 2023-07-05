@@ -2,6 +2,7 @@ import React from 'react'
 import {FaLinkedin, FaArrowDown,FaGithub} from 'react-icons/fa'
 import chick from '../assets/chick.png'
 import photo from '../assets/UCSC ID.jpg'
+import Avatar from './Avatar'
 
 // JS code for Scrolling functionality
 window.addEventListener("scroll", function() {
@@ -67,11 +68,17 @@ const Hero = () => {
             </div>
             
         </section>
-
+        {/* color palette:
+            [#3F2305] */}
         <a
             href={photo}
             download={true}
-            className='flex justify-center items-center mt-10 text-black py-2 rounded-lg bg-gradient-to-r from-orange-400 to-yellow-100 darkMode-color'
+            className='flex justify-center items-center mt-10 text-white py-2 rounded-lg bg-orange-400 darkMode-color
+            tracking-wide
+            transition hover:-translate-y-1 hover:scale-110 hover:tracking-widest ease-in-out duration-500 delay-75 relative 
+            drop-shadow-sm hover:drop-shadow-lg
+            hover:bg-gradient-to-r hover:from-orange-400 hover:via-yellow-100 hover:to-orange-400
+            hover:font-medium'
             >
                 Download Resume
             </a>
@@ -98,19 +105,16 @@ const Hero = () => {
         </div>
 
         {/* Avatar and Resume */}
-        <div className='shrink-0 lg:pb-40'>
+        {/* <div className='shrink-0 lg:pb-40'>
             <img src={chick}
             alt='Avatar alt'
             className='w-60 h-60 md:w-72 md:h-72 lg:w-72 lg:h-72 object-cover object-top bg-gradient-to-b from-orange-400 rounded-xl pt-5'
             ></img>
-            {/* <a
-            href={photo}
-            download={true}
-            className='flex justify-center items-center mt-10 text-black py-2 rounded-lg bg-gradient-to-r from-orange-400 to-yellow-100 darkMode-color'
-            >
-                Download Resume
-            </a> */}
+        </div> */}
+        <div className='lg:pb-20'>
+            <Avatar/>
         </div>
+        
 
 
         
