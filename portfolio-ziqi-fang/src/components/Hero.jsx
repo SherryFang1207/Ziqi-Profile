@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <section className='flex flex-col justify-center items-center min-h-screen'>
         
-    <section className='flex flex-col items-center text-center lg:flex-row lg:space-y-0 lg:space-x-10 lg:m-0 lg:p-16 justify-evenly lg:w-5/6 lg:pt-0'>
+    <section className='flex flex-col items-center text-center lg:flex-row lg:space-y-0 lg:space-x-10 lg:m-0 lg:p-16 justify-evenly lg:w-5/6 lg:pt-0 lg:pb-20'>
         <div>
 
         <h3 className='text-[#3F2305] text-left text-xl md:text-2xl'>Hello! My name is </h3>
@@ -68,12 +68,20 @@ const Hero = () => {
             
         </section>
 
+        <a
+            href={photo}
+            download={true}
+            className='flex justify-center items-center mt-10 text-black py-2 rounded-lg bg-gradient-to-r from-orange-400 to-yellow-100 darkMode-color'
+            >
+                Download Resume
+            </a>
+
         
         
         
 
 
-        <div className='flex justify-evenly py-8 lg:py-16 text-3xl w-full md:justify-evenly md:gap-6 lg:justify-evenly '>
+        <div className='flex justify-evenly py-8 lg:py-8 text-3xl w-full md:justify-evenly md:gap-6 lg:justify-evenly '>
             {SOCIAL.map(({id, link, icon}) => (
                 <a 
                 href={link}
@@ -90,18 +98,18 @@ const Hero = () => {
         </div>
 
         {/* Avatar and Resume */}
-        <div className='shrink-0'>
+        <div className='shrink-0 lg:pb-40'>
             <img src={chick}
             alt='Avatar alt'
             className='w-60 h-60 md:w-72 md:h-72 lg:w-72 lg:h-72 object-cover object-top bg-gradient-to-b from-orange-400 rounded-xl pt-5'
             ></img>
-            <a
+            {/* <a
             href={photo}
             download={true}
             className='flex justify-center items-center mt-10 text-black py-2 rounded-lg bg-gradient-to-r from-orange-400 to-yellow-100 darkMode-color'
             >
                 Download Resume
-            </a>
+            </a> */}
         </div>
 
 
