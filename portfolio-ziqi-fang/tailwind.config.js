@@ -21,7 +21,11 @@ module.exports = {
         '0%, 20%, 50%, 80%, 100%' : {transform: 'translateY(0)'}, 
         '40%' : {transform: 'translateY(-20px)'},
         '60%' : {transform: 'translateY(-15px)'},
-     },
+      },
+      rotating: {
+        '0%': {transform: 'rotate(0deg)'},
+        '100%': {transform: 'rotate(360deg)'},
+      },
     },
     extend: {
       animation: {
@@ -32,6 +36,7 @@ module.exports = {
         'typing-modest': 'typing 4s steps(16) infinite',
         'slide': 'slide 12s steps(3) infinite',
         'big-bounce':'bouncing 2s linear infinite',
+        'rotating':'rotating 3s linear infinite',
       },
       backgroundImage: {
         'main-pattern': "url('/src/assets/webb.png')",
