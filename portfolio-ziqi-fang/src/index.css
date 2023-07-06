@@ -18,5 +18,5 @@
 }
 
 .hide-down-arrow {
-  opacity:0;
+  display:none;
 }
