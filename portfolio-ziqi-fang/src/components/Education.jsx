@@ -14,7 +14,7 @@ const Education = () => {
             <div className='w-1/2 flex flex-col xl:flex-row gap-2 justify-evenly items-center'>
                 {/* picture */}
                 <div className='flex shrink-0'>
-                    <img src={UCSC_Icon} alt='UCSC Icon' className='flex w-60 h-60 '></img>
+                    <img src={UCSC_Icon} alt='UCSC Icon' className='flex w-60 h-auto '></img>
                 </div>
                 {/* Description */}
                 <div className='flex flex-col justify-center items-center'>
@@ -40,14 +40,14 @@ const Education = () => {
             <div className='w-1/2 flex flex-col xl:flex-row gap-2 justify-evenly items-center'>
                 {/* picture */}
                 <div className='flex shrink-0'>
-                    <img src={AWS_badge} alt='aws_badge' className='flex w-60 h-60 '></img>
+                    <img src={AWS_badge} alt='aws_badge' className='flex w-60 h-auto '></img>
                 </div>
                 {/* Description */}
                 <div className='flex flex-col justify-center items-center'>
                     <h2 className='tracking-wide font-semibold text-2xl py-2'> AWS Certified Cloud Practitioner</h2>
                     <p>The AWS Certified Cloud Practitioner validates foundational, high-level understanding of AWS Cloud, services, and terminology.</p>
                     {/* before:from-[#57DDF3] before:to-[#C7F954] */}
-                    <p className='flex text-center text-lg font-medium text-[#43c79f]'>Aquire Time: 2022</p>
+                    <p className='flex text-center text-lg font-medium text-[#43c79f]'>Aquire Time: 2023</p>
                     <p className='flex text-center text-md font-normal text-[#27725b]'>Issued By: Amazon Web Services Training and Certification</p>
                 </div>
             </div>

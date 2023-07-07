@@ -9,6 +9,7 @@ import Footer from "./components/Footer.jsx";
 import Avatar from "./components/Avatar.jsx";
 import About from './components/About.jsx'
 import Education from "./components/Education.jsx";
+import Tech from "./components/Tech.jsx";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Hero />
           <About/>
           <Education/>
+          <Tech/>
           <Services/>
           <Portfolio/>
           <Testimonials/>
