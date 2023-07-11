@@ -49,7 +49,7 @@ const Mini = () => {
     ];
 
   return (
-    <Section title="UI Component Mini-Projects" subtitle="Little UI component, Huge improvement in User Experience.">
+    <Section title="UI Component Mini-Projects" subtitle="Little UI component, Huge improvement in User Experience." >
         <Carousel content={PROJECTS} autoSlide={true}/>
     </Section>
   )

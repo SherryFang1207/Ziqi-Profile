@@ -23,10 +23,14 @@ const Carousel = ({content:slides, autoSlide = false, autoSlideInterval = 3000})
   }, [])
   return (
     
-    <div className='max-w-lg overflow-hidden relative rounded-md'>
+    <div className='max-w-2xl overflow-hidden relative rounded-md group'>
       <div className='flex transition-transform ease-out duration-700 ' style={{transform:`translateX(-${curr * 100}%)`}}>
       {slides.map((s) => (
-            <img src={s.thumbnail} className='object-cover '/>
+          <>
+          
+            <img src={s.thumbnail} className='object-cover group-hover:blur-sm transition duration-500'/>
+            
+            </>
         ))}
     </div>
 
@@ -50,6 +54,14 @@ const Carousel = ({content:slides, autoSlide = false, autoSlideInterval = 3000})
           ))}
 
         </div>
+      </div>
+
+      <div className='opacity-0 drop-shadow-sm flex flex-col absolute inset-32 items-center justify-center p-1 bg-white rounded-lg darkMode-color group-hover:opacity-100 transition duration-300 delay-75 group-hover:drop-shadow-xl'>
+        <p className='tracking-wide text-lg p-4'>{slides[curr].projName}</p>
+        <p className='tracking-wide text-sm p-2'>{slides[curr].description}</p>
+        <a href={slides[curr].link} className='text-md cursor-pointer duration-150 hover:scale-110 m-4' target='_blank' rel='noopener noreferrer'>
+          <p className='p-4 bg-yellow-100 rounded-xl'>Click for Live View</p>
+        </a>
       </div>
     </div>
   )

@@ -25,10 +25,8 @@ function App() {
           <About/>
           <Education/>
           <Tech/>
-          <Mini/>
-          <Services/>
           <Portfolio/>
-          <Testimonials/>
+          <Mini/>
           <Contact />
           <Footer/>
       </main>
