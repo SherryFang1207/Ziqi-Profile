@@ -10,6 +10,7 @@ import Avatar from "./components/Avatar.jsx";
 import About from './components/About.jsx'
 import Education from "./components/Education.jsx";
 import Tech from "./components/Tech.jsx";
+import Mini from "./components/Mini.jsx";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <About/>
           <Education/>
           <Tech/>
+          <Mini/>
           <Services/>
           <Portfolio/>
           <Testimonials/>
