@@ -7,7 +7,7 @@ const Header = ({darkMode, setDarkMode}) => {
     <header className='darkMode-color'>
       <nav className='flex justify-between items-center p-5'>
         <h1 className='text-lg'>
-          SnowyBunny
+          Ziqi Fang
         </h1>
         <div onClick={() => setDarkMode(!darkMode)}>
           {
