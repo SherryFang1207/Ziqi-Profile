@@ -17,6 +17,7 @@ const Profile_Avatar = ({profile_photo}) => {
         hover:before:-inset-y-6 hover:before:inset-x-0
         before:transition before:ease-in-out before:duration-300 before:delay-100
         before:animate-rotating
+        before:opacity-0 sm:before:opacity-100
         after:content-[""] after:absolute after:inset-2 after:bg-white after:rounded-full after:z-10
         overflow-hidden transition ease-in-out duration-500 min-h-0 flex
         '>
