@@ -2,8 +2,9 @@ import React from 'react'
 import Section from './common/Section'
 import profile from '../assets/cmt-photo.jpg'
 import self_portrait from '../assets/Self-Portrait.jpg'
+import sherry2 from '../assets/avatar2.jpg'
 
-const Avatar = () => {
+const Avatar = ({profile_photo}) => {
   return (
     <section className='wrapper flex justify-center items-center'>
         {/* Outer Ring */}
@@ -26,7 +27,7 @@ const Avatar = () => {
             {/* Inner Content */}
 
             {/* First Layer Photo */}
-            <img src={profile} alt='profile image'
+            <img src={sherry2} alt='profile image'
                 className='absolute object-cover top-0 left-0 w-full h-full group-hover:opacity-0 transition ease-in-out duration-300 delay-75 z-10 pointer-events-none'
             />
 

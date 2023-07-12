@@ -3,6 +3,7 @@ import {FaLinkedin, FaArrowDown,FaGithub} from 'react-icons/fa'
 import chick from '../assets/chick.png'
 import photo from '../assets/UCSC ID.jpg'
 import Avatar from './Avatar'
+import Profile_Avatar from './Profile_Avatar'
 
 // JS code for Scrolling functionality
 window.addEventListener("scroll", function() {
@@ -112,7 +113,8 @@ const Hero = () => {
             ></img>
         </div> */}
         <div className='lg:pb-20'>
-            <Avatar/>
+            {/* <Avatar/> */}
+            <Profile_Avatar/>
         </div>
         
 
