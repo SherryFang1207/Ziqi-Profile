@@ -11,7 +11,7 @@ const Avatar = ({profile_photo}) => {
         {/* color palatte:
           1. Dark Mode: bg-black before:from-[#d400d4] before:to-[#00ccff]
          */}
-        <section className='w-80 h-80 relative rounded-full
+        <section className='w-64 h-64 sm:w-80 sm:h-80 relative rounded-full
         before:content-[""] before:absolute before:bg-gradient-to-br bg-[#FDF4E3] before:from-[#57DDF3] before:to-[#C7F954]
         before:-inset-y-3 before:inset-x-16
         hover:before:-inset-y-6 hover:before:inset-x-0
