@@ -16,7 +16,8 @@ import Mini from "./components/Mini.jsx";
 function App() {
   // DarkMode Variable Manually Controlled
   const [darkMode, setDarkMode] = useState(false);
-
+  // Check if mobile
+  // var answer = window.orientation > 1;
   return (
     <div className="overflow-hidden">
       <div className={darkMode && "dark"}>

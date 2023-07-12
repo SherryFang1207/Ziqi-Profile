@@ -6,12 +6,15 @@ import sherry1 from '../assets/avatar1.jpg'
 
 const Profile_Avatar = ({profile_photo}) => {
   return (
-    <section className='wrapper flex justify-center items-center min-h-0'>
+    <section className='wrapper flex justify-center items-center min-h-0 overflow-hidden'>
+        <div className='flex p-1 overflow-hidden'>
+
+        
         {/* Outer Ring */}
         {/* color palatte:
           1. Dark Mode: bg-black before:from-[#d400d4] before:to-[#00ccff]
          */}
-        <section className='w-64 h-64 sm:w-80 sm:h-80 relative rounded-full
+        <section className='overflow-hidden w-64 h-64 sm:w-80 sm:h-80 relative rounded-full
         before:content-[""] before:absolute before:bg-gradient-to-br bg-[#FDF4E3] before:from-[#57DDF3] before:to-[#C7F954]
         before:-inset-y-3 before:inset-x-16
         hover:before:-inset-y-6 hover:before:inset-x-0
@@ -19,7 +22,7 @@ const Profile_Avatar = ({profile_photo}) => {
         before:animate-rotating
         before:opacity-0 sm:before:opacity-100
         after:content-[""] after:absolute after:inset-2 after:bg-white after:rounded-full after:z-10
-        overflow-hidden transition ease-in-out duration-500 min-h-0 flex
+         transition ease-in-out duration-500 min-h-0 flex
         '>
         {/* Inner Ring */}
         <div className='content absolute border-[#dacdb5] border-[6px] z-20 rounded-full inset-6 overflow-hidden
@@ -46,6 +49,7 @@ const Profile_Avatar = ({profile_photo}) => {
         </div>
 
         </section>
+        </div>
     </section>
     
   )
