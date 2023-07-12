@@ -53,18 +53,21 @@ export const Portfolio = () => {
     <div className='grid gap-8 lg:gap-14 xl:grid-cols-2'>
         {projects.map(({id, image, title,description, github, demo}) => (
             <div key={id}
-                className='max-w-3xl flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden'
+                className='max-w-3xl flex flex-col md:flex-row shadow-lg shadow-gray-300 rounded-2xl overflow-hidden my-4'
             >
-                <img src={image} alt={title} className='w-2/3'/>
-                <div className='w-1/3 flex flex-col items-center justify-evenly p-2'>
+                <img src={image} alt={title} className='w-full md:w-2/3 my-2'/>
+                <div className='w-full md:w-1/3 flex flex-col items-center justify-evenly p-2'>
                     <h2 className='tracking-wide text-xl font-semibold'>{title}</h2>
                     <p>{description}</p>
+                    <div className='flex flex-row w-full justify-evenly my-4'>
                     <a href={github} className='text-lg md:text-xl lg:text-2xl cursor-pointer duration-150 hover:scale-110' target='_blank' rel='noopener noreferrer'>
                         <FaGithub/>
                     </a>
                     <a href={demo} className='text-lg md:text-xl lg:text-2xl cursor-pointer duration-150 hover:scale-110' target='_blank' rel='noopener noreferrer'>
                         <FaExternalLinkAlt/>
                     </a>
+                    </div>
+                    
                 </div>
             </div>
         ))}
