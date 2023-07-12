@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaLinkedin, FaArrowDown,FaGithub} from 'react-icons/fa'
 import chick from '../assets/chick.png'
-import photo from '../assets/UCSC ID.jpg'
+import resume from '../assets/Ziqi Fang Resume.pdf'
 import Avatar from './Avatar'
 import Profile_Avatar from './Profile_Avatar'
 
@@ -72,7 +72,7 @@ const Hero = () => {
         {/* color palette:
             [#3F2305] */}
         <a
-            href={photo}
+            href={resume}
             download={true}
             className='flex justify-center items-center mt-10 text-white py-2 rounded-lg bg-orange-400 darkMode-color
             tracking-wide
