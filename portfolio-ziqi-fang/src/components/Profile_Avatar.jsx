@@ -7,7 +7,7 @@ import sherry1 from '../assets/avatar1.jpg'
 const Profile_Avatar = ({profile_photo}) => {
   return (
     <section className='wrapper flex justify-center items-center min-h-0 overflow-hidden'>
-        <div className='flex p-1 overflow-hidden'>
+        <div className='flex  overflow-hidden w-64 h-64 sm:w-80 sm:h-80 bg-yellow-700 rounded-full'>
 
         
         {/* Outer Ring */}
