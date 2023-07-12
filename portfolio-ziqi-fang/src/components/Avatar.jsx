@@ -6,7 +6,7 @@ import sherry2 from '../assets/avatar2.jpg'
 
 const Avatar = ({profile_photo}) => {
   return (
-    <section className='wrapper flex justify-center items-center'>
+    <section className='wrapper flex justify-center items-center min-h-0'>
         {/* Outer Ring */}
         {/* color palatte:
           1. Dark Mode: bg-black before:from-[#d400d4] before:to-[#00ccff]
@@ -18,8 +18,7 @@ const Avatar = ({profile_photo}) => {
         before:transition before:ease-in-out before:duration-300 before:delay-100
         before:animate-rotating
         after:content-[""] after:absolute after:inset-2 after:bg-white after:rounded-full after:z-10
-        overflow-hidden transition ease-in-out duration-500
-        '>
+        overflow-hidden transition ease-in-out duration-500 min-h-0'>
         {/* Inner Ring */}
         <div className='content absolute border-[#dacdb5] border-[6px] z-20 rounded-full inset-6 overflow-hidden
         group flex flex-col justify-center items-center 
