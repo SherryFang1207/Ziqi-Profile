@@ -29,7 +29,7 @@ const Contact = () => {
     <Section title="📩 Contact Me 📩" subtitle="I am open to talk regarding freelancing or full-time oppurtinities. Hope to hear from you soon!">
         <div className='flex flex-col items-center justify-center gap-8 text-center'>
             
-                <div>
+                <div className='overflow-hidden'>
                     <Avatar />
                 </div>
                 <div>

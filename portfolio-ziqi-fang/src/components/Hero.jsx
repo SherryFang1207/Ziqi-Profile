@@ -112,7 +112,7 @@ const Hero = () => {
             className='w-60 h-60 md:w-72 md:h-72 lg:w-72 lg:h-72 object-cover object-top bg-gradient-to-b from-orange-400 rounded-xl pt-5'
             ></img>
         </div> */}
-        <div className='lg:pb-20'>
+        <div className='lg:pb-20 overflow-hidden'>
             {/* <Avatar/> */}
             <Profile_Avatar/>
         </div>

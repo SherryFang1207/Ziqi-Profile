@@ -20,7 +20,7 @@ function App() {
   return (
     <div className={darkMode && "dark"}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main className="darkMode-color p-6 ">
+      <main className="darkMode-color p-6 overflow-hidden">
           <Hero />
           <About/>
           <Education/>
