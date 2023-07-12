@@ -18,7 +18,7 @@ const Avatar = ({profile_photo}) => {
         before:transition before:ease-in-out before:duration-300 before:delay-100
         before:animate-rotating
         after:content-[""] after:absolute after:inset-2 after:bg-white after:rounded-full after:z-10
-        overflow-hidden transition ease-in-out duration-500 min-h-0'>
+        overflow-hidden transition ease-in-out duration-500 min-h-0 flex'>
         {/* Inner Ring */}
         <div className='content absolute border-[#dacdb5] border-[6px] z-20 rounded-full inset-6 overflow-hidden
         group flex flex-col justify-center items-center 

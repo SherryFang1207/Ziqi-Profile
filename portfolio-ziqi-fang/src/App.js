@@ -18,7 +18,8 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode && "dark"}>
+    <div className="overflow-hidden">
+      <div className={darkMode && "dark"}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <main className="darkMode-color p-6 overflow-hidden">
           <Hero />
@@ -30,7 +31,9 @@ function App() {
           <Contact />
           <Footer/>
       </main>
+      </div>
     </div>
+    
   );
 }
 

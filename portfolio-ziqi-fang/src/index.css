@@ -20,3 +20,7 @@
 .hide-down-arrow {
   display:none;
 }
+
+html, body {
+  overflow: scroll;
+}
