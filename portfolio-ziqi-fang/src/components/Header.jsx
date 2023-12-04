@@ -1,15 +1,12 @@
-import React from 'react';
-import {MdNightsStay, MdSunny} from 'react-icons/md';
+import React from "react";
+import { MdNightsStay, MdSunny } from "react-icons/md";
 
-
-const Header = ({darkMode, setDarkMode}) => {
+const Header = ({ darkMode, setDarkMode }) => {
   return (
-    <header className='darkMode-color'>
-      <nav className='flex justify-between items-center p-5'>
-        <h1 className='text-lg'>
-          Ziqi Fang
-        </h1>
-        <div onClick={() => setDarkMode(!darkMode)}>
+    <header className="darkMode-color">
+      <nav className="flex justify-between items-center p-5">
+        <h1 className="text-lg">Ziqi Fang</h1>
+        {/* <div onClick={() => setDarkMode(!darkMode)}>
           {
             darkMode ?
             <MdSunny className='text-2xl cursor-pointer' /> :
@@ -17,10 +14,10 @@ const Header = ({darkMode, setDarkMode}) => {
           }
           
 
-        </div>
+        </div> */}
       </nav>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

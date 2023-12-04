@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin, FaArrowDown, FaGithub } from "react-icons/fa";
 import chick from "../assets/chick.png";
 import resume from "../assets/Ziqi Fang Resume.pdf";
+import frontend_resume from "../assets/Ziqi Fang Software Engineer Resume.pdf";
 import Avatar from "./Avatar";
 import Profile_Avatar from "./Profile_Avatar";
 
@@ -71,7 +72,7 @@ const Hero = () => {
           {/* color palette:
             [#3F2305] */}
           <a
-            href={resume}
+            href={frontend_resume}
             download={true}
             className="flex justify-center items-center mt-10 text-white py-2 rounded-lg bg-orange-400 darkMode-color
             tracking-wide
